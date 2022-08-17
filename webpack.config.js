@@ -8,11 +8,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  mode:'development',
+  mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'To-do-list',
-        template: './src/index.html',
+      title: 'To-do-list',
+      template: './src/index.html',
     }),
   ],
   module: {
@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
     ],
   },
