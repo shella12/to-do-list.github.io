@@ -1,3 +1,65 @@
-.hello {
-    color: red;
-  }
+*,
+::before,
+::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+section {
+  padding: 20%;
+}
+
+.main {
+  box-shadow: 2px 4px 5px 0px rgba(163,145,145,0.75);
+-webkit-box-shadow: 2px 4px 5px 0px rgba(163,145,145,0.75);
+-moz-box-shadow: 2px 4px 5px 0px rgba(163,145,145,0.75);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.main ul li.title {
+background: url(./icon_restart.png) no-repeat;
+background-position: 95% 50%;
+}
+
+.main ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.main ul li {
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-bottom-color: gray;
+}
+
+.main ul li.input >input {
+font-size: 1rem;
+ outline: none;
+ border: none;
+ width: 100%;
+}
+
+.main ul li.input > input::placeholder {
+  font-style: italic;
+  font-size: medium;
+ }
+ .chklist{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+ }
+.main ul li img {
+  margin-left: auto;
+ }
+
+.main button{
+  color: grey;
+  padding: 1rem;
+  border: none;
+}
