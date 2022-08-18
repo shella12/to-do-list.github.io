@@ -38,9 +38,17 @@ section {
   border-bottom-color: gray;
 }
 
+.main ul li.third-list {
+  padding: 0;
+  border: 1px solid transparent;
+}
+
 .main ul li.input {
   display: flex;
+}
 
+.main ul li img {
+  margin-left: auto;
 }
 
 .main ul li.input > input {
@@ -55,7 +63,7 @@ section {
   font-size: medium;
 }
 
-.main ul li.input > img{
+.main ul li.input > img {
   src: url(./plus.png);
 }
 
@@ -65,15 +73,11 @@ section {
   align-items: center;
 }
 
-.chklist input[type='text']{
+.chklist input[type='text'] {
   font-size: 1rem;
   width: 100%;
   outline: none;
   border: none;
-}
-
-.main ul li img {
-  margin-left: auto;
 }
 
 .main button {
