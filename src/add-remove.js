@@ -11,7 +11,7 @@ addList.addEventListener('click', () => {
   if (inputList.value !== '') {
     const des = inputList.value;
     todoArray.push(
-      { description: des, completed: false },
+      { description: des, completed: false, index: 0 },
     );
   }
   inputList.value = '';
@@ -88,12 +88,13 @@ export function editTask(event, list, checkboxImage, checkboxLabel) {
 }
 
 function createList() {
-  localStorage.setItem('data', JSON.stringify(todoArray));
   uList.innerHTML = '';
   todoArray.forEach((element, index) => {
+    element.index=index;
     const list = addTask(element.description, index);
     uList.appendChild(list);
   });
+  localStorage.setItem('data', JSON.stringify(todoArray));
 }
 
 export default createList;
