@@ -6,7 +6,7 @@ const addList = document.body.querySelector('.add-list');
 const inputList = document.body.querySelector('.input-list');
 const uList = document.body.querySelector('.ulist-child');
 
-const todoArray = [];
+export const todoArray = [];
 
 export function removeTask(list) {
   const index = Number(list.id);
