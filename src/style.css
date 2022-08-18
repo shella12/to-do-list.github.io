@@ -38,6 +38,11 @@ section {
   border-bottom-color: gray;
 }
 
+.main ul li.input {
+  display: flex;
+
+}
+
 .main ul li.input > input {
   font-size: 1rem;
   outline: none;
@@ -50,10 +55,21 @@ section {
   font-size: medium;
 }
 
+.main ul li.input > img{
+  src: url(./plus.png);
+}
+
 .chklist {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.chklist input[type='text']{
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  border: none;
 }
 
 .main ul li img {
