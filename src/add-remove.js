@@ -90,7 +90,7 @@ export function editTask(event, list, checkboxImage, checkboxLabel) {
 function createList() {
   uList.innerHTML = '';
   todoArray.forEach((element, index) => {
-    element.index=index;
+    element.index = index;
     const list = addTask(element.description, index);
     uList.appendChild(list);
   });
