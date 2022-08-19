@@ -51,6 +51,20 @@ section {
   margin-left: auto;
 }
 
+.main li.active {
+  position: relative;
+}
+
+.main li.active input::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  height: 1px;
+  width: 90%;
+  background-color: black;
+}
+
 .main ul li.input > input {
   font-size: 1rem;
   outline: none;

@@ -1,12 +1,13 @@
 import iconDelete from './delete.png';
 import iconDots from './icon_dots.png';
+import updateCheckbox from './update-chk.js';
 import './style.css';
 
 const addList = document.body.querySelector('.add-list');
 const inputList = document.body.querySelector('.input-list');
 const uList = document.body.querySelector('.ulist-child');
 
-export const todoArray = [];
+const todoArray = [];
 
 export function removeTask(list) {
   const index = Number(list.id);
@@ -51,16 +52,31 @@ export function editTask(event, list, checkboxImage, checkboxLabel) {
   }
 }
 
-export function addTask(description, index) {
+export function addTask(description, index, check) {
   const list = document.createElement('li');
   const checkbox = document.createElement('input');
   const checkboxImage = document.createElement('img');
   list.className = 'chklist';
   list.id = index;
+  if (check) {
+    list.classList.add('active');
+    checkbox.checked = true;
+  }
   checkbox.name = 'todo';
+  checkbox.className = 'checkboxCls';
   checkbox.id = index;
   checkbox.value = description;
   checkbox.type = 'checkbox';
+
+  checkbox.addEventListener('change', (event) => {
+    if (event.target.checked) {
+      updateCheckbox(list, todoArray, true);
+    }
+
+    if (!(event.target.checked)) {
+      updateCheckbox(list, todoArray, false);
+    }
+  });
   const checkboxLabel = document.createElement('input');
   checkboxLabel.type = 'text';
   checkboxLabel.id = 'label';
@@ -81,51 +97,11 @@ export function createList() {
   uList.innerHTML = '';
   todoArray.forEach((element, index) => {
     element.index = index;
-    const list = addTask(element.description, index);
+    const list = addTask(element.description, index, element.completed);
     uList.appendChild(list);
   });
   localStorage.setItem('data', JSON.stringify(todoArray));
 }
-
-// export function removeTask(list) {
-//   const index = Number(list.id);
-//   list.remove();
-//   todoArray.splice(index, 1);
-//   createList();
-// }
-
-// export function editTask(event, list, checkboxImage, checkboxLabel) {
-//   const index = Number(list.id);
-
-//   if (event === 'label') {
-//     checkboxImage.src = iconDelete;
-//     checkboxImage.id = 'delete';
-//     checkboxLabel.readOnly = false;
-//     checkboxLabel.id = 'labelClick';
-//     list.style.backgroundColor = 'yellow';
-//     checkboxLabel.style.backgroundColor = 'yellow';
-//   } else if (event === 'delete') {
-//     removeTask(list);
-//   } else if (event === 'labelClick') {
-//     checkboxImage.src = iconDots;
-//     checkboxImage.id = 'dots';
-//     list.style.backgroundColor = 'white';
-//     checkboxLabel.style.backgroundColor = 'white';
-//     checkboxLabel.id = 'label';
-//     checkboxLabel.readOnly = true;
-//     todoArray[index].description = checkboxLabel.value;
-//     localStorage.setItem('data', JSON.stringify(todoArray));
-//   } else {
-//     checkboxImage.src = iconDots;
-//     checkboxImage.id = 'dots';
-//     list.style.backgroundColor = 'white';
-//     checkboxLabel.style.backgroundColor = 'white';
-//     checkboxLabel.id = 'label';
-//     checkboxLabel.readOnly = true;
-//     todoArray[index].description = checkboxLabel.value;
-//     localStorage.setItem('data', JSON.stringify(todoArray));
-//   }
-// }
 
 addList.addEventListener('click', () => {
   if (inputList.value !== '') {
