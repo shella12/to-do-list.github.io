@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://shella12.github.io/to-do-list.github.io/dist/)
+[Live Demo Link](https://shella12.github.io/to-do-list.github.io/dist)
 ![](./app_screenshot.png)
 
 ## Authors
