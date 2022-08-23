@@ -9,7 +9,7 @@ const uList = document.body.querySelector('.ulist-child');
 
 const todoArray = [];
 
-export function removeTask(list) {
+export const removeTask = (list) => {
   const index = Number(list.id);
   list.remove();
   todoArray.splice(index, 1);
@@ -19,7 +19,7 @@ export function removeTask(list) {
   localStorage.setItem('data', JSON.stringify(todoArray));
 }
 
-export function editTask(event, list, checkboxImage, checkboxLabel) {
+export const editTask= (event, list, checkboxImage, checkboxLabel) =>{
   const index = Number(list.id);
 
   if (event === 'label') {
@@ -52,7 +52,7 @@ export function editTask(event, list, checkboxImage, checkboxLabel) {
   }
 }
 
-export function addTask(description, index, check) {
+export const addTask=(description, index, check)=> {
   const list = document.createElement('li');
   const checkbox = document.createElement('input');
   const checkboxImage = document.createElement('img');
@@ -93,7 +93,7 @@ export function addTask(description, index, check) {
   return list;
 }
 
-export function createList() {
+export const createList=() =>{
   uList.innerHTML = '';
   todoArray.forEach((element, index) => {
     element.index = index;
