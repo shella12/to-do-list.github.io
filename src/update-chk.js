@@ -1,4 +1,4 @@
-function updateCheckbox(list, array, checked) {
+const updateCheckbox = (list, array, checked) => {
   array[Number(list.id)].completed = checked;
   localStorage.setItem('data', JSON.stringify(array));
   if (checked) {
@@ -6,11 +6,11 @@ function updateCheckbox(list, array, checked) {
   } else {
     list.classList.remove('active');
   }
-}
-export function clearAllCompleted(array) {
+};
+export const clearAllCompleted = (array) => {
   const arr = array.filter((element) => !(element.completed));
   localStorage.setItem('data', JSON.stringify(arr));
   return arr;
-}
+};
 
 export default updateCheckbox;
