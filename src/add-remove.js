@@ -17,9 +17,9 @@ export const removeTask = (list) => {
     element.index = index;
   });
   localStorage.setItem('data', JSON.stringify(todoArray));
-}
+};
 
-export const editTask= (event, list, checkboxImage, checkboxLabel) =>{
+export const editTask = (event, list, checkboxImage, checkboxLabel) => {
   const index = Number(list.id);
 
   if (event === 'label') {
@@ -50,9 +50,9 @@ export const editTask= (event, list, checkboxImage, checkboxLabel) =>{
     todoArray[index].description = checkboxLabel.value;
     localStorage.setItem('data', JSON.stringify(todoArray));
   }
-}
+};
 
-export const addTask=(description, index, check)=> {
+export const addTask = (description, index, check) => {
   const list = document.createElement('li');
   const checkbox = document.createElement('input');
   const checkboxImage = document.createElement('img');
@@ -91,9 +91,9 @@ export const addTask=(description, index, check)=> {
     editTask(event.target.id, list, checkboxImage, checkboxLabel);
   });
   return list;
-}
+};
 
-export const createList=() =>{
+export const createList = () => {
   uList.innerHTML = '';
   todoArray.forEach((element, index) => {
     element.index = index;
@@ -101,7 +101,7 @@ export const createList=() =>{
     uList.appendChild(list);
   });
   localStorage.setItem('data', JSON.stringify(todoArray));
-}
+};
 
 addList.addEventListener('click', () => {
   if (inputList.value !== '') {
