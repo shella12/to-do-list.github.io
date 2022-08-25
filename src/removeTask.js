@@ -1,3 +1,5 @@
+import todoArray from "./__mocks__/todoarray";
+
 const removeTask = (list) => {
     const index = Number(list.id);
     list.remove();
@@ -5,7 +7,7 @@ const removeTask = (list) => {
     todoArray.forEach((element, index) => {
       element.index = index;
     });
-    localStorage.setItem('data', JSON.stringify(todoArray));
+    // localStorage.setItem('data', JSON.stringify(todoArray));
   };
 
   module.exports=removeTask;

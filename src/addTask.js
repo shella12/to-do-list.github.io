@@ -1,6 +1,5 @@
-import todoArray from "./__tests__/todoarray";
+import todoArray from "./__mocks__/todoarray";
 import updateCheckbox from "./update-chk.js";
-// jest.mock('./__tests__/todoarray.js')
 
  const addTask = (description, index, check) => {
     const list = document.createElement('li');
@@ -40,8 +39,7 @@ import updateCheckbox from "./update-chk.js";
     list.addEventListener('click', (event) => {
       editTask(event.target.id, list, checkboxImage, checkboxLabel);
     });
-    console.log(list);
-    return 1;
+    return list;
   };
 
   module.exports=addTask;
