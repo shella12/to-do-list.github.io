@@ -58,7 +58,7 @@ Showcase your todo list.
 
 - GitHub: [@githubhandle](mahdimahdawi)
 - Twitter: [@twitterhandle](https://twitter.com/MahdiMahdawi)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ayesha-arshad-a690a015a/)
+- LinkedIn: [LinkedIn](Mahdi Mahdawi)
 
 **Author3**
 
