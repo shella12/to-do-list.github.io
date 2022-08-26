@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1661493445913" clover="3.2.0">
-  <project timestamp="1661493445913" name="All files">
+<coverage generated="1661497298120" clover="3.2.0">
+  <project timestamp="1661497298121" name="All files">
     <metrics statements="49" coveredstatements="34" conditionals="8" coveredconditionals="1" methods="8" coveredmethods="3" elements="65" coveredelements="38" complexity="0" loc="49" ncloc="49" packages="1" files="3" classes="3"/>
-    <file name="addTask.js" path="E:\Microverse\Test\Second Module\W 3\Ayesha\to-do-list.github.io\src\addTask.js">
+    <file name="addTask.js" path="/home/megha/Microverse/to-do-list.github.io/src/addTask.js">
       <metrics statements="32" coveredstatements="25" conditionals="6" coveredconditionals="1" methods="3" coveredmethods="1"/>
       <line num="4" count="1" type="stmt"/>
       <line num="5" count="7" type="stmt"/>
@@ -37,7 +37,7 @@
       <line num="42" count="7" type="stmt"/>
       <line num="45" count="1" type="stmt"/>
     </file>
-    <file name="removeTask.js" path="E:\Microverse\Test\Second Module\W 3\Ayesha\to-do-list.github.io\src\removeTask.js">
+    <file name="removeTask.js" path="/home/megha/Microverse/to-do-list.github.io/src/removeTask.js">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="3" type="stmt"/>
@@ -47,7 +47,7 @@
       <line num="8" count="7" type="stmt"/>
       <line num="13" count="1" type="stmt"/>
     </file>
-    <file name="update-chk.js" path="E:\Microverse\Test\Second Module\W 3\Ayesha\to-do-list.github.io\src\update-chk.js">
+    <file name="update-chk.js" path="/home/megha/Microverse/to-do-list.github.io/src/update-chk.js">
       <metrics statements="10" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="0" type="stmt"/>
