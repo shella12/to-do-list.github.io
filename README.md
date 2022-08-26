@@ -4,6 +4,13 @@
 
 > To-do list.
 
+## Description
+
+- This is TODO list project build using Javascript and Webpack.
+- Using this we can add daily task and also can update and remove them.
+- To store the tasks local storage is used.
+- Tasks can be marked as complete task.
+
 ## Built With
 
 - HTML, CSS, JavaScript
@@ -50,15 +57,15 @@ Showcase your todo list.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/shella12)
-- Twitter: [@twitterhandle](https://twitter.com/AyeshaA03712974)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ayesha-arshad-a690a015a/)
+- GitHub: [@shella12](https://github.com/shella12)
+- Twitter: [@Ayesha Arshad](https://twitter.com/AyeshaA03712974)
+- LinkedIn: [Ayesha Arshad](https://www.linkedin.com/in/ayesha-arshad-a690a015a/)
 
 **Author2**
 
-- GitHub: [@githubhandle](mahdimahdawi)
+- GitHub: [@mahdimahdawi](https://github.com/mahdimahdawi)
 - Twitter: [@twitterhandle](https://twitter.com/MahdiMahdawi)
-- LinkedIn: [LinkedIn](Mahdi Mahdawi)
+- LinkedIn: [Mahdi Mahdawi](https://www.linkedin.com/in/Mahdi-Mahdawi/)
 
 **Author3**
 
