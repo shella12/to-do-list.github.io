@@ -2,12 +2,12 @@ import todoArray from './__mocks__/todoarray';
 import removeTask from './removeTask';
 
 
-const editTask = (event, list, checkboxImage, checkboxLabel) => {
+const editTask = (event, list, checkboxLabel) => {
     const index = Number(list.id);
   
     if (event === 'label') {
     //   checkboxImage.src = iconDelete;
-      checkboxImage.id = 'delete';
+      // checkboxImage.id = 'delete';
       checkboxLabel.readOnly = false;
       checkboxLabel.id = 'labelClick';
       list.style.backgroundColor = 'yellow';
@@ -16,7 +16,7 @@ const editTask = (event, list, checkboxImage, checkboxLabel) => {
       removeTask(list);
     } else if (event === 'labelClick') {
     //   checkboxImage.src = iconDots;
-      checkboxImage.id = 'dots';
+      // checkboxImage.id = 'dots';
     //   list.style.backgroundColor = 'white';
     //   checkboxLabel.style.backgroundColor = 'white';
       checkboxLabel.id = 'label';
@@ -25,7 +25,7 @@ const editTask = (event, list, checkboxImage, checkboxLabel) => {
     //   localStorage.setItem('data', JSON.stringify(todoArray));
     } else {
     //   checkboxImage.src = iconDots;
-      checkboxImage.id = 'dots';
+      // checkboxImage.id = 'dots';
     //   list.style.backgroundColor = 'white';
     //   checkboxLabel.style.backgroundColor = 'white';
       checkboxLabel.id = 'label';
