@@ -7,7 +7,6 @@ const removeTask = (list) => {
   todoArray.forEach((element, index) => {
     element.index = index;
   });
-  // localStorage.setItem('data', JSON.stringify(todoArray));
 };
 
 module.exports = removeTask;
