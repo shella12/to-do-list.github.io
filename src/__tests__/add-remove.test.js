@@ -26,6 +26,13 @@ describe('AddTask Tests',()=>{
         expect(listChek).toHaveLength(4);
         expect(list.children.length).toBe(2);
     });
+    test('Add Third list item, length of <ul> should be 3 this time',()=>{
+        listItem=addTask('play PUBG',3,false);
+        list.appendChild(listItem);
+        const listChek=document.querySelectorAll('li.chklist');
+        expect(listChek).toHaveLength(4);
+        expect(list.children.length).toBe(3);
+    });
 })
 
 describe('RemoveTask Tests',()=>{
@@ -51,4 +58,9 @@ describe('RemoveTask Tests',()=>{
         removeTask(list.firstElementChild);
         expect(list.children.length).toBe(2);
     });
+    test('remove Third list item, length of <ul> should be 1 by this time',()=>{
+        expect(list.children.length).toBe(2);
+        removeTask(list.firstElementChild);
+        expect(list.children.length).toBe(1);
+    })
 })

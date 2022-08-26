@@ -99,3 +99,7 @@ section {
   padding: 1rem;
   border: none;
 }
+
+.add-list:hover {
+  transform: scale(1.2) rotate(45deg);
+}

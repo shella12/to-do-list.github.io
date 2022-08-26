@@ -90,7 +90,7 @@ export const addTask = (description, index, check) => {
   list.addEventListener('click', (event) => {
     editTask(event.target.id, list, checkboxImage, checkboxLabel);
   });
-  console.log(list);
+  // console.log(list);
   return list;
 };
 
