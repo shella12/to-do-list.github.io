@@ -1,8 +1,6 @@
-
 const clearAllCompleted = (array) => {
-    const arr = array.filter((element) => !(element.completed));
-    // localStorage.setItem('data', JSON.stringify(arr));
-    return arr;
-  };
+  const arr = array.filter((element) => !(element.completed));
+  return arr;
+};
 
-  module.exports=clearAllCompleted;
+module.exports = clearAllCompleted;
